@@ -1,0 +1,126 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-image: url('https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(44, 62, 80, 0.8);
+  color: white;
+  min-height: 50vh;
+}
+
+.hero img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #3498db;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.hero img:hover {
+  transform: scale(1.05);
+}
+
+.hero h1 {
+  margin: 0.5rem 0;
+  font-size: 2rem;
+}
+
+.hero p {
+  margin: 0;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  backdrop-filter: blur(5px);
+}
+
+.section h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.hobi-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.hobi-item {
+  background-color: #3498db;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hobi-item:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+}
+
+.contact p {
+  margin: 0.5rem 0;
+}
+
+.contact p:hover {
+  color: #3498db;
+  cursor: default;
+}
+
+.dark-mode {
+  background-color: rgba(26, 26, 26, 0.9);
+  color: #f0f0f0;
+}
+
+.dark-mode .section {
+  background-color: rgba(45, 45, 45, 0.9);
+  color: #f0f0f0;
+}
+
+.dark-mode .section h2 {
+  color: #f0f0f0;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.theme-toggle:hover {
+  background-color: #2980b9;
+}
